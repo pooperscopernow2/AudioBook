@@ -1,0 +1,25 @@
+{
+  "name": "folio-reader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/copy-wasm.mjs && vite --host 0.0.0.0",
+    "build": "tsc -b && node scripts/copy-wasm.mjs && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "lucide-react": "^0.468.0",
+    "pdfjs-dist": "4.10.38",
+    "@xenova/transformers": "2.17.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3"
+  }
+}

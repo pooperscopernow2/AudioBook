@@ -1,0 +1,8 @@
+node_modules
+dist
+.sites-runtime
+*.tar.gz
+
+*.tsbuildinfo
+
+public/wasm/
